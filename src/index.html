@@ -14,13 +14,12 @@
         <header>
             <nav>
                 <div>
-                    <i class="fas fa-user-circle"></i>
+                    <a href="#home"><i class="fas fa-user-circle"></i></a> 
                 </div>
             </nav>
         </header>
         <main>
             <section id="login-user">
-                <div class="minigeneral-left"></div>
                 <div class="general">
                     <div id="form-login">
                        <div>
@@ -29,9 +28,9 @@
                        <input type="text" placeholder="Username"><br>
                        <input type="password" placeholder="Password"><br>
                        <button id="btn-sign-in">Sign in</button>
+                       <pre>__________        o        __________</pre>
+                       <button id="btn-register">REGÍSTRATE</button>
                     </div>
-                    <pre>__________        o        __________</pre>
-                    <button id="btn-register">REGÍSTRATE</button>
                 </div>
             </section>
             <section id="register-user" class="hide">
@@ -47,25 +46,200 @@
                     <button id="form-enviar">Enviar</button>
                 </div>
             </section>
-            <section></section>
-            <section id="incomes" class="hide"></section>
-            <section id="expenses" class="hide"></section>
-            <section id="balance" class="hide"></section>
+            <section id="home" class="hide">
+                <div>
+                    <h1>¡Hola Laboratorian!</h1>
+                    <p>Sabemos que las finanzas son un aspecto súper importante en tu vida
+                        diaria, es por ello que creamos esta aplicación pues queremos ayudar 
+                        a tu salud financiera ¡Conócela!
+                    </p>
+                    <div>
+                        <div>Recordatorios
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+            
+                        <div>Tips</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="incomes" class="hide">
+                <div class="general">
+                    <h2>Aqui puedes programar tus ingresos:</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <select name="income" id="income">
+                                    <option> Mensual</option>
+                                    <option>Trimestral</option>
+                                    <option>Semestral</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h3>Ingresos fijos</h3>
+                                <i class="fas fa-shopping-bag">Sueldo</i>
+                                <i class="fas fa-wallet">Beca</i>
+                                <i class="fas fa-plus-circle">Agregar otro</i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <select name="month" id="months">
+                                    <option>Enero</option>
+                                    <option>Fedrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubrel</option>
+                                    <option>Noviembre</option>
+                                    <option>Diciembre</option>
+                                </select>
+                            </div>
+                            <div>
+                            <h3>Ingreso Extra</h3>
+                                <i class="fas fa-coins">Tanda</i>
+                                <i class="fas fa-plus-circle">Agregar otro</i>
+                            </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Saldo total $9,500</h3>
+                        </div>
+                        <div>
+                            <h3>Se abonaron $7,500 mensuales</h3>
+                        </div>
+                    </div>
+                </div>     
+            </section>
+
+            <section id="expenses" class="hide">
+                    <div>
+                        Aqui puedes programar tus Egresos
+                            <div>
+                                <select name="expenses" id="expenses">
+                                    <option> Mensual</option>
+                                    <option>Trimestral</option>
+                                    <option>Semestral</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="month" id="monthsExpenses">
+                                    <option>Enero</option>
+                                    <option>Fedrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubrel</option>
+                                    <option>Noviembre</option>
+                                    <option>Diciembre</option>
+                                </select>
+                            </div>
+                            <div>Gastos fijos</div>
+                            <p>Comida</p>
+                            <i class="fas fa-utensils"></i> <input type=""> <p> $2,285</p>
+                            <p>Renta</p>
+                            <i class="fas fa-home"></i> <input type="text"> <p> $1,523.55</p>
+                            <p>Gas</p>
+                            <i class="fas fa-burn"></i> <input type="text"> <p> $500</p>
+                            <p>Internet</p>
+                            <i class="fas fa-wifi"></i> <input type=""> <p> $300</p>
+                            <p>Agua</p>
+                            <i class="fas fa-tint"></i> <input type="text"> <p> $150</p>
+                            <p>Luz</p>
+                            <i class="fas fa-lightbulb"></i> <input type="text"> <p> $138.25</p>
+                        </div>
+                        <div> Agrega Otro
+                                <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div> Gasto Extra
+                            <p>Café</p>
+                            <i class="fas fa-coffee"></i><input type="text"> <p> $35</p>
+                            <p>Agregar otro</p>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Saldo total $4,500</h3>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="balance" class="hide">
+                <div>
+                    <p>Este es tu equilibrio de gastos mensual</p>
+                    <select name="" id="">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <pre>Gastos       /      Ingresos</pre>
+                        <i class="fas fa-chart-pie"></i>
+                        <ul>
+                            <li>Comida  50%</li>
+                            <li>Renta  30%</li>
+                            <li>Servicios  15%</li>
+                            <li>Otros  5%</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Lista de gastos</p>
+                        <i class="fas fa-utensils"></i>
+                        <p>Comida</p>
+                        <p>$2,285</p>
+                        <i class="fas fa-home"></i>
+                        <p>Renta</p>
+                        <p>$1,523.55</p>
+                        <i class="fas fa-fire"></i>
+                        <p>Gas</p>
+                        <p>$500</p>
+                    </div>
+                    <div>
+                        <pre>¡Bien hecho! Tu saldo inicial alcanza para cubrir todos tus gastos.
+                        ¡Sigue así para lograr tus metas!
+                        </pre>
+                    </div>
+                </div>
+                <div>
+                    <p>Saldo disponible $4,500</p>
+                    <p>Viajar al extranjero - $2,000</p>
+                    <p>Saldo actual $2,500</p>
+                </div>
+            </section>
             <section id="goals" class="hide"></section>
             <section id="modals" class="hide"></section>
             
         </main>
     </div>
     <aside>
-        <div>
+        <div class="container-aside">
             <figure>
-                <img src="" alt="">
+                <img src="../img/logo.svg" alt="logo">
             </figure>
             <ul>
-                <li><a href="#incomes">Ingresos</a></li>
-                <li><a href="#expenses">Gastos</a></li>
-                <li><a href="#balance">Equilibrio</a></li>
-                <li><a href="#goals">Metas</a></li>
+                <li><a id="btn-incomes" href="#incomes">Ingresos</a></li>
+                <li><a id="btn-expenses" href="#expenses">Gastos</a></li>
+                <li><a id="btn-balance" href="#balance">Equilibrio</a></li>
+                <li><a id="btn-goals" href="#goals">Metas</a></li>
             </ul>
         </div>
     </aside>
